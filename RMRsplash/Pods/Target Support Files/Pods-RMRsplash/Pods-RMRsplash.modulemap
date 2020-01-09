@@ -1,0 +1,6 @@
+framework module Pods_RMRsplash {
+  umbrella header "Pods-RMRsplash-umbrella.h"
+
+  export *
+  module * { export * }
+}

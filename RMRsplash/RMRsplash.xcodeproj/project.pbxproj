@@ -13,6 +13,7 @@
 		1FCA66C823C0B48F003012A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA66C623C0B48F003012A1 /* Main.storyboard */; };
 		1FCA66CA23C0B491003012A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA66C923C0B491003012A1 /* Assets.xcassets */; };
 		1FCA66CD23C0B491003012A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA66CB23C0B491003012A1 /* LaunchScreen.storyboard */; };
+		89C7E3BA088FA87A95123121 /* Pods_RMRsplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74362D3782E30E17EF3792E7 /* Pods_RMRsplash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		1FCA66C923C0B491003012A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FCA66CC23C0B491003012A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FCA66CE23C0B491003012A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25449CA1C0972C4C4506A2F8 /* Pods-RMRsplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMRsplash.release.xcconfig"; path = "Target Support Files/Pods-RMRsplash/Pods-RMRsplash.release.xcconfig"; sourceTree = "<group>"; };
+		6EE711AF62CBF872FD82A2F5 /* Pods-RMRsplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMRsplash.debug.xcconfig"; path = "Target Support Files/Pods-RMRsplash/Pods-RMRsplash.debug.xcconfig"; sourceTree = "<group>"; };
+		74362D3782E30E17EF3792E7 /* Pods_RMRsplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMRsplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C7E3BA088FA87A95123121 /* Pods_RMRsplash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1FCA66BF23C0B48E003012A1 /* RMRsplash */,
 				1FCA66BE23C0B48E003012A1 /* Products */,
+				6ECE7584EBD20DAF57EF4EEF /* Pods */,
+				282A3E5182097A77F45F44C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = RMRsplash;
 			sourceTree = "<group>";
 		};
+		282A3E5182097A77F45F44C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74362D3782E30E17EF3792E7 /* Pods_RMRsplash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ECE7584EBD20DAF57EF4EEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EE711AF62CBF872FD82A2F5 /* Pods-RMRsplash.debug.xcconfig */,
+				25449CA1C0972C4C4506A2F8 /* Pods-RMRsplash.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FCA66D123C0B491003012A1 /* Build configuration list for PBXNativeTarget "RMRsplash" */;
 			buildPhases = (
+				F19178A009999C163925F06D /* [CP] Check Pods Manifest.lock */,
 				1FCA66B923C0B48E003012A1 /* Sources */,
 				1FCA66BA23C0B48E003012A1 /* Frameworks */,
 				1FCA66BB23C0B48E003012A1 /* Resources */,
+				D44D1DFFB88C1F742D3D111A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D44D1DFFB88C1F742D3D111A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RMRsplash/Pods-RMRsplash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RMRsplash/Pods-RMRsplash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RMRsplash/Pods-RMRsplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F19178A009999C163925F06D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RMRsplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FCA66B923C0B48E003012A1 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		1FCA66D223C0B491003012A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE711AF62CBF872FD82A2F5 /* Pods-RMRsplash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +371,7 @@
 		};
 		1FCA66D323C0B491003012A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25449CA1C0972C4C4506A2F8 /* Pods-RMRsplash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
